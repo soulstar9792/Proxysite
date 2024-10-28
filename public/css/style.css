@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.height-100vh {
+    height: 100vh;
+}
+
+.center-container {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: block;
+    width: 100vw;
+    height: 200px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Title Style */
+h1 {
+    color: #5a86b6;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Input Style */
+.pxyinput {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #5a86b6;
+    border-radius: 50px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    font-size: 1em;
+}
+
+.pxyinput:focus {
+    border-color: #3b6e9f;
+    box-shadow: 0 0 10px rgba(91, 134, 182, 0.2);
+}
+
+/* Ad Section */
+.ad {
+    margin: 20px 0;
+}
+
+/* iFrame Style */
+.frame {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    height: calc(100vh - 200px);
+}
+
+.frame:hover {
+    transform: scale(1.01);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .pxyinput {
+        padding: 12px;
+        font-size: 0.9em;
+    }
+
+    .center-container {
+        padding: 20px;
+    }
+
+}
